@@ -45,7 +45,7 @@ var path = {
     htaccess: 'src/.htaccess',
   },
   clean: './build', //директории которые могут очищаться
-  outputDir: './build' //исходная корневая директория для запуска минисервера
+  outputDir: './build/' //исходная корневая директория для запуска минисервера
 };
 
 // Локальный сервер для разработки
@@ -54,7 +54,6 @@ gulp.task('connect', function () {
     root: [path.outputDir], //корневая директория запуска сервера
     port: 9999, //какой порт будем использовать
     livereload: true, //инициализируем работу LiveReload
-    logPrefix: "Frontend_Devil"
   });
   gulp.start('notify');
 });
