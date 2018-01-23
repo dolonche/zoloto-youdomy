@@ -1,0 +1,27 @@
+.page-header__wrapper {
+  background-color: #6F777F;
+  width: 280px;
+  height: 100vh;
+  min-height: 550px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  letter-spacing: 1px;
+}
+.page-header{
+  position: relative;
+}
+.page-header__logo-image {
+  transform: translateX(-25px);
+  outline: none;
+}
+
+div {
+  //@extend %center;
+}
+
+@media #{$tablet-widths} {
+  header {
+    
+  }
+}
