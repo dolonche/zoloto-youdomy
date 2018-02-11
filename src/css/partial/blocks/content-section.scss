@@ -1,5 +1,19 @@
-.content-section{
+.content-section__wrapper{
+}
+.content-section {
   max-width: 1000px;
   padding-left: 35px;
   padding-right: 35px;
+  &__text {
+    background-color: #49647F;
+    color: #fff;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    letter-spacing: 3px;
+    width: calc(100% - 20px);
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }

@@ -30,6 +30,7 @@
       visibility: visible;
       opacity: 1;
       height: 100vh;
+      z-index: 100;
     }
     &:hover {
       padding-left: 50px;
