@@ -7,9 +7,10 @@
   top: 0;
   left: 0;
   letter-spacing: 1px;
+  z-index: 99999;
 }
 .page-header{
-  position: relative;
+  position: static;
 }
 .page-header__logo-image {
   transform: translateX(-25px);
