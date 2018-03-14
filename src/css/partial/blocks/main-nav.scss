@@ -49,8 +49,9 @@
     width: 220px;
     opacity: 0;
     visibility: hidden;
-    transition: 0.4s all ease;
+    transition: 0.3s all ease;
     transform: translateX(100%);
+    transition-delay: 0.2s;
     &-title {
       height: 204px;
       font-size: 20px;

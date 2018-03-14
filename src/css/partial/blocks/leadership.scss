@@ -1,0 +1,31 @@
+.leadership {
+  padding-top: 20px;
+}
+
+.leadership__item {
+  box-sizing: border-box;
+  padding: 20px;
+  margin-bottom: 25px;
+  background-color: #49647F;
+  color: #fff;
+  background-image: repeating-linear-gradient(45deg, rgba(42, 51, 63, .1), rgba(42, 51, 63, .1) 2px, transparent 0, transparent 30px), repeating-linear-gradient(-45deg, rgba(42, 51, 63, .1), rgba(42, 51, 63, .1) 2px, transparent 0, transparent 30px);
+  img {
+    float: left;
+    margin-right: 20px;
+  }
+  &-name {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  &-contacts {
+    clear: left;
+    padding-top: 20px;
+    a {
+      text-decoration: none;
+      border-bottom: 2px solid gold;
+      color: #fff;
+    }
+  }
+  @extend %clearfix;
+}

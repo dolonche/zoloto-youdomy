@@ -1,24 +1,27 @@
-.title-section__wrapper{
-  
-}
+.title-section__wrapper {}
+
 .title-section {
-   border-bottom: 1px solid #444;
+  border-bottom: 1px solid #444;
   font-size: 24px;
   letter-spacing: 3px;
   text-transform: uppercase;
   color: #ffcc00;
   padding-left: 35px;
-    padding-top: 90px;
+  padding-top: 90px;
   padding-bottom: 90px;
-  &--main {
-    background-image: url(../img/pic_4blur.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    font-family: "Comfortaa";
-    color: #fff;
-    &:first-letter{
-      color: gold;
-    }
+  background-image: url(../img/pic_4blur.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "Comfortaa";
+  color: #fff;
+  &:first-letter {
+    color: gold;
+  }
+  &__sub-text{
+    font-size: 16px;
+    position: absolute;
+    text-transform: none;
+    margin-top: 10px;
   }
 }
