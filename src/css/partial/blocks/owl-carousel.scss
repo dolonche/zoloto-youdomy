@@ -1,6 +1,9 @@
-.owl-carousel{
-  &--main{
+.owl-carousel {
+  &--main {
     box-sizing: border-box;
     padding-right: 20px;
+    & .owl-next {
+      right: 0px;
+    }
   }
 }

@@ -1,9 +1,12 @@
-.content-section__wrapper {}
+.content-section__wrapper {
+  background-image: repeating-linear-gradient(90deg, rgba(75, 95, 119, .1), rgba(75, 95, 119, .1) 2px, transparent 0, transparent 10px);
+}
 
 .content-section {
   max-width: 1000px;
   padding-left: 35px;
   padding-right: 35px;
+  background-color: #fff;
   &__text {
     background-color: #49647F;
     box-shadow: 0px 8px 18px 3px rgba(40, 40, 40, 0.5);

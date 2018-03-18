@@ -1,0 +1,12 @@
+.text-block {
+  &__title {
+    margin-top: 0;
+    padding-top: 24px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    &:first-letter {
+      color: gold;
+    }
+  }
+  &__item {}
+}
