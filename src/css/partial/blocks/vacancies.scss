@@ -1,31 +1,32 @@
-.vacancies{
+.vacancies {
   display: flex;
   flex-direction: column;
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.vacancies__item{
+
+.vacancies__item {
   margin-bottom: 25px;
   background-color: #49647F;
   color: #fff;
   padding-left: 20px;
   padding-right: 20px;
-  background-image: repeating-linear-gradient(45deg,rgba(42,51,63,.1),rgba(42,51,63,.1) 2px,transparent 0,transparent 30px),repeating-linear-gradient(-45deg,rgba(42,51,63,.1),rgba(42,51,63,.1) 2px,transparent 0,transparent 30px);
+  background-image: repeating-linear-gradient(45deg, rgba(42, 51, 63, .1), rgba(42, 51, 63, .1) 2px, transparent 0, transparent 30px), repeating-linear-gradient(-45deg, rgba(42, 51, 63, .1), rgba(42, 51, 63, .1) 2px, transparent 0, transparent 30px);
   width: 60%;
-  &-name{
+  &-name {
     font-size: 24px;
     font-weight: 100;
-    &:first-letter{
+    &:first-letter {
       color: gold;
     }
   }
-  &-demands{
-    &-list{
+  &-demands {
+    &-list {
       padding-left: 20px;
       list-style: none;
-      &-item{
+      &-item {
         position: relative;
-        &::before{
+        &::before {
           position: absolute;
           content: "";
           width: 10px;
@@ -33,19 +34,30 @@
           border-radius: 100%;
           background-color: gold;
           left: -20px;
-          top:50%;
+          top: 50%;
           transform: translateY(-50%);
         }
       }
     }
   }
-  &-feedback{
+  &-feedback {
     margin-top: 20px;
     margin-bottom: 20px;
-    a{
+    a {
       text-decoration: none;
       border-bottom: 2px solid gold;
       color: #fff;
+    }
+  }
+}
+
+@media #{$mobile-widths} {
+  .vacancies__item {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 14px;
+    &-name {
+      font-size: 20px;
     }
   }
 }

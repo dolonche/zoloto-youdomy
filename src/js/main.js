@@ -1,35 +1,11 @@
-$('.owl-carousel.owl-carousel--galery').owlCarousel({
-  loop: true,
-  margin: 20,
-  nav: true,
-  responsive: {
-    0: {
-      items: 1
-    },
-    600: {
-      items: 3
-    },
-    1000: {
-      items: 3
-    }
+var navButton = document.querySelector('.main-nav__toggle');
+var navList = document.querySelector('.main-nav__list');
+navButton.addEventListener('click', function(){
+  if(navButton.classList.length === 1){
+    navButton.classList.add('main-nav__toggle--open');
+    navList.classList.add('main-nav__list--open');
+  } else{
+    navButton.classList.remove('main-nav__toggle--open');
+    navList.classList.remove('main-nav__list--open');
   }
-})
-$('.owl-carousel.owl-carousel--main').owlCarousel({
-  loop: true,
-  margin: 20,
-  nav: true,
-  autoplay: true,
-  autoplayTimeout: 2000,
-  autoplayHoverPause: true,
-  responsive: {
-    0: {
-      items: 1
-    },
-    600: {
-      items: 1
-    },
-    1000: {
-      items: 1
-    }
-  }
-})
+});

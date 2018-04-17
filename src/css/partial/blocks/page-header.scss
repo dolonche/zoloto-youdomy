@@ -9,33 +9,64 @@
   letter-spacing: 1px;
   z-index: 999;
 }
-.page-header{
+
+.page-header {
   position: static;
 }
+
 .page-header__logo-image {
   transform: translateX(-25px);
   outline: none;
 }
-.page-header__bottom{
+
+.page-header__bottom {
   display: flex;
   width: 100%;
   position: absolute;
   box-sizing: border-box;
   padding-left: 58px;
   bottom: 0;
-  &-content{
+  &-content {
     margin-right: 10px;
     color: #ccc;
     font-size: 8px;
     opacity: 0.6;
   }
 }
+
+.page-header__mobile-link {
+  display: none;
+}
+
 div {
   //@extend %center;
 }
 
-@media #{$tablet-widths} {
-  header {
-    
+@media #{$mobile-widths} {
+  .page-header__desktop-link {
+    display: none;
+  }
+  .page-header__mobile-link {
+    display: block;
+    font-family: "Comfortaa";
+    color: gold;
+    text-decoration: none;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    width: 200px;
+  }
+  .page-header__wrapper {
+    width: 100%;
+    height: auto;
+    position: relative;
+    min-height: auto;
+  }
+  .page-header__bottom{
+    display: none;
+  }
+  .page-header__logo{
+    position: relative;
+    z-index: 999;
   }
 }
