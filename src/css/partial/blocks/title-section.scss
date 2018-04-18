@@ -24,6 +24,13 @@
     text-transform: none;
     margin-top: 10px;
   }
+  &--main{
+    .title-section__sub-text{
+      color: gold;
+      text-transform: uppercase;
+      margin-left: 46px;
+    }
+  }
 }
 
 @media #{$mobile-widths} {
@@ -33,7 +40,12 @@
     padding-top: 20px;
     font-size: 19px;
     &--main {
-      font-size: 0;
+      font-size: 18px;
+      padding-bottom: 25px;
+      .title-section__sub-text{
+        margin-left: 0;
+        font-size: 14px;
+      }
     }
     &__sub-text {
       line-height: 16px;

@@ -28,6 +28,9 @@
 }
 
 @media #{$custom-widths} {
+  .galery--main{
+    display: none;
+  }
   .galery__item {
     width: calc(50% - 10px);
   }

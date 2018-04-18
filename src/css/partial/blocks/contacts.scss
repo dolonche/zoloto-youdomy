@@ -1,0 +1,28 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  &__item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    &-name {
+      font-size: 20px;
+      font-family: "Comfortaa";
+      margin-bottom: 20px;
+      &:first-letter {
+        color: gold;
+      }
+    }
+    &-descr {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    iframe {
+      width: 100%;
+    }
+    img {
+      margin-top: 20px;
+    }
+  }
+}

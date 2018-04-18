@@ -1,12 +1,11 @@
 .features {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
 }
 
 .features-item {
-  width: 33.333333%;
-  margin-right: 20px;
+  width: calc(33.333333% - 20px);
   background-color: #49647F;
   box-shadow: 0px 8px 18px 3px rgba(40, 40, 40, 0.5);
   display: flex;
@@ -40,6 +39,7 @@
 @media #{$custom-widths} {
   .features {
     flex-direction: column;
+    margin-top: 20px;
   }
   .features-item {
     width: 100%;
