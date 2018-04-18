@@ -7,3 +7,20 @@
     }
   }
 }
+
+@media #{$mobile-widths} {
+  .owl-carousel {
+    &--main {
+      box-sizing: border-box;
+      padding-right: 0;
+      & .owl-next {
+        right: 10px;
+        border-color: gold;
+      }
+      & .owl-prev {
+        left: 10px;
+        border-color: gold;
+      }
+    }
+  }
+}

@@ -38,10 +38,6 @@
   display: none;
 }
 
-div {
-  //@extend %center;
-}
-
 @media #{$mobile-widths} {
   .page-header__desktop-link {
     display: none;

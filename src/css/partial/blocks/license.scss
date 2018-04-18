@@ -1,18 +1,28 @@
 .license {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    padding-top: 25px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding-top: 25px;
 }
 
 .license__item {
-    margin-right: 20px;
-    a {
-        display: block;
-        width: 100%;
-        height: 100%;
-    }
-    img {
-        width: 100%;
-    }
+  margin-right: 20px;
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+@media #{$custom-widths} {
+  .license {
+    flex-direction: column;
+  }
+  .license__item {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
 }

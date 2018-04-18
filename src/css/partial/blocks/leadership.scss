@@ -29,3 +29,14 @@
   }
   @extend %clearfix;
 }
+
+@media #{$custom-widths} {
+  .leadership__item {
+    display: flex;
+    flex-direction: column;
+    img {
+      width: 150px;
+      margin-bottom: 15px;
+    }
+  }
+}
