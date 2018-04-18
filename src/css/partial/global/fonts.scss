@@ -2,16 +2,19 @@
   font-family: "Open sans";
   font-weight: 400;
   src: url(../fonts/opensans.woff2), url(../fonts/opensans.woff);
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Open sans";
   font-weight: 700;
   src: url(../fonts/opensansbold.woff2), url(../fonts/opensansbold.woff);
+  font-display: swap;
 }
+
 @font-face {
   font-family: "Comfortaa";
   font-weight: 400;
   src: url(../fonts/Comfortaa-Regular.ttf);
+  font-display: swap;
 }
-
