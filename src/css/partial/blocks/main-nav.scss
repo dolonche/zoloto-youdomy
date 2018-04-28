@@ -82,11 +82,10 @@
     width: 0;
     height: 0;
     padding: 0;
-    overflow: hidden;
-    transform: translateY(-100%);
     transition: 0.4s height;
     position: absolute;
     background-color: #283340;
+    overflow: hidden;
     &-item {
       &:hover {
         padding-left: 20px;
@@ -100,10 +99,9 @@
     }
     &--open {
       width: 100%;
-      height: auto;
+      height: 592px;
       visibility: visible;
-      transform: translateY(0);
-      transition: 0.4s transform;
+      transition: 0.4s height;
     }
     &-inner {
       &-item {
